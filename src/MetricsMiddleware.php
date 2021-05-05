@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ReactInspector\HttpMiddleware;
+namespace WyriHaximus\Hydrator\Middleware;
 
-use ReactInspector\HttpMiddleware\Metrics\Configuration;
+use WyriHaximus\Hydrator\Middleware\Metrics\Configuration;
 use WyriHaximus\Hydrator\MiddlewareCallerInterface;
 use WyriHaximus\Hydrator\MiddlewareInterface;
 use WyriHaximus\Metrics\Label;
