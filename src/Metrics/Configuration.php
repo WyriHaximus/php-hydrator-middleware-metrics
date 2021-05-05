@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ReactInspector\HttpMiddleware\Metrics;
+namespace WyriHaximus\Hydrator\Middleware\Metrics;
 
 use WyriHaximus\Metrics\Factory;
 use WyriHaximus\Metrics\Label;
