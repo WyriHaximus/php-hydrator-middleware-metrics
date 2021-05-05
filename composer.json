@@ -1,0 +1,44 @@
+{
+  "name": "wyrihaximus/hydrator-middleware-metrics",
+  "description": "Metrics middleware for wyrihaximus/hydrator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cees-Jan Kiewiet",
+      "email": "ceesjank@gmail.com",
+      "homepage": "https://www.wyrihaximus.net/"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "wyrihaximus/hydrator": "dev-master",
+    "wyrihaximus/metrics": "^1.0"
+  },
+  "require-dev": {
+    "wyrihaximus/test-utilities": "^3.7"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.7"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "WyriHaximus\\Hydrator\\Middleware\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WyriHaximus\\Tests\\Hydrator\\Middleware\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "composer normalize"
+    ],
+    "post-update-cmd": [
+      "composer normalize"
+    ]
+  }
+}
