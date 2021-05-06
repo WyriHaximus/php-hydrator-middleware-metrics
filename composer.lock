@@ -767,20 +767,20 @@
         },
         {
             "name": "wyrihaximus/constants",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-constants.git",
-                "reference": "a2202b683261f8119f3772eb1e3469a2b5c4d9eb"
+                "reference": "32ceffdd881593c7fa24d8fcbf9deb58687484cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-constants/zipball/a2202b683261f8119f3772eb1e3469a2b5c4d9eb",
-                "reference": "a2202b683261f8119f3772eb1e3469a2b5c4d9eb",
+                "url": "https://api.github.com/repos/WyriHaximus/php-constants/zipball/32ceffdd881593c7fa24d8fcbf9deb58687484cb",
+                "reference": "32ceffdd881593c7fa24d8fcbf9deb58687484cb",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^5.3"
+                "php": "^8 || ^7 || ^5.3"
             },
             "type": "library",
             "autoload": {
@@ -805,9 +805,15 @@
             "description": "Collection of constants for PHP",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-constants/issues",
-                "source": "https://github.com/WyriHaximus/php-constants/tree/master"
+                "source": "https://github.com/WyriHaximus/php-constants/tree/1.6.0"
             },
-            "time": "2020-04-02T21:00:04+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-28T12:04:43+00:00"
         },
         {
             "name": "wyrihaximus/hydrator",
@@ -864,16 +870,16 @@
         },
         {
             "name": "wyrihaximus/metrics",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-metrics.git",
-                "reference": "9a8dc375802f768726c113288b12fd427cf24162"
+                "reference": "cdf8ee62b5fa6b253ec8823070ea112671757f9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-metrics/zipball/9a8dc375802f768726c113288b12fd427cf24162",
-                "reference": "9a8dc375802f768726c113288b12fd427cf24162",
+                "url": "https://api.github.com/repos/WyriHaximus/php-metrics/zipball/cdf8ee62b5fa6b253ec8823070ea112671757f9a",
+                "reference": "cdf8ee62b5fa6b253ec8823070ea112671757f9a",
                 "shasum": ""
             },
             "require": {
@@ -906,7 +912,7 @@
             "description": "🕵️‍♀️ Prometheus modelled metric VO's and registry",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-metrics/issues",
-                "source": "https://github.com/WyriHaximus/php-metrics/tree/1.0.0"
+                "source": "https://github.com/WyriHaximus/php-metrics/tree/1.0.2"
             },
             "funding": [
                 {
@@ -914,7 +920,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-15T20:36:25+00:00"
+            "time": "2020-11-17T22:53:16+00:00"
         }
     ],
     "packages-dev": [
