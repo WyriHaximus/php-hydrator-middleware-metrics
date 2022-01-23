@@ -22,7 +22,7 @@ else
 		-v "`pwd`:`pwd`" \
 		-v "${COMPOSER_CACHE_DIR}:/home/app/.composer/cache" \
 		-w "`pwd`" \
-		"ghcr.io/wyrihaximusnet/php:${PHP_VERSION}-nts-alpine3.13-slim-dev"
+		"ghcr.io/wyrihaximusnet/php:${PHP_VERSION}-nts-alpine-slim-dev"
 endif
 
 all: ## Runs everything ###
@@ -38,7 +38,7 @@ cs: ## Check the code for code style issues
 	$(DOCKER_RUN) vendor/bin/phpcs --parallel=$(shell nproc) --cache=./var/.phpcs.cache.json --standard=./etc/qa/phpcs.xml
 
 stan: ## Run static analysis (PHPStan)
-	$(DOCKER_RUN) vendor/bin/phpstan analyse src tests --level max --ansi -c ./etc/qa/phpstan.neon
+	$(DOCKER_RUN) vendor/bin/phpstan analyse src --level max --ansi -c ./etc/qa/phpstan.neon
 
 psalm: ## Run static analysis (Psalm)
 	$(DOCKER_RUN) vendor/bin/psalm --threads=$(shell nproc) --shepherd --stats --config=./etc/qa/psalm.xml

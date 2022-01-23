@@ -10,18 +10,12 @@
     }
   ],
   "require": {
-    "php": "^7.4",
+    "php": "^8 || ^7.4",
     "wyrihaximus/hydrator": "dev-master",
-    "wyrihaximus/metrics": "^1.0"
+    "wyrihaximus/metrics": "^1.1"
   },
   "require-dev": {
-    "wyrihaximus/test-utilities": "^3.7"
-  },
-  "config": {
-    "platform": {
-      "php": "7.4.7"
-    },
-    "sort-packages": true
+    "wyrihaximus/test-utilities": "^5 || ^3.7.6"
   },
   "autoload": {
     "psr-4": {
@@ -32,6 +26,19 @@
     "psr-4": {
       "WyriHaximus\\Tests\\Hydrator\\Middleware\\": "tests/"
     }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true
+    },
+    "platform": {
+      "php": "7.4.7"
+    },
+    "sort-packages": true
   },
   "scripts": {
     "post-install-cmd": [
